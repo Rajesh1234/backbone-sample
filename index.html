@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Backbone IDM</title>
+
+    <style>
+        body {
+            padding-top: 60px;
+        }
+    </style>
+    <link rel="stylesheet/less" type="text/css" href="less/bootstrap.less">
+    <link rel="stylesheet/less" type="text/css" href="less/responsive.less">
+</head>
+
+<body data-spy="scroll" data-target=".subnav" data-offset="50">
+
+<div class="header"></div>
+
+<div class="container">
+    <div class="row">
+        <div id="content" class="span12>"></div>
+    </div>
+
+    <footer class="footer">
+        <p>Sample application built with Backbone.js and Twitter Bootstrap.</p>
+    </footer>
+
+</div>
+
+<script src="lib/less-1.3.1.min.js"></script>
+<script src="lib/jquery-1.7.2.min.js"></script>
+<script src="lib/underscore-min.js"></script>
+<script src="lib/backbone-min.js"></script>
+<script src="lib/bootstrap-dropdown.js"></script>
+<script src="lib/bootstrap-transition.js"></script>
+
+<!-- NOTE: memorystore.js will set up an in-memory datastore to allow you to experience the app without setting up
+back-end infrastructure. All the changes you make to the data will be lost the next time you access the app or hit Refresh.
+To use the app with a persistent RESTful back-end (provided in the GitHub repo), simply comment out the line below. -->
+<script src="js/memorystore.js"></script>
+
+<script src="js/utils.js"></script>
+<script src="js/models/models.js"></script>
+<script src="js/views/paginator.js"></script>
+<script src="js/views/header.js"></script>
+<script src="js/views/userlist.js"></script>
+<script src="js/views/userdetails.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
